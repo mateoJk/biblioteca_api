@@ -1,0 +1,23 @@
+### Crear Categoría
+POST http://127.0.0.1:8000/api/v1/categorias/
+Content-Type: application/json
+
+{
+  "nombre": "Ciencia Ficción",
+  "descripcion": "Novelas distópicas."
+}
+
+### Crear Libro
+POST http://127.0.0.1:8000/api/v1/libros/
+Content-Type: application/json
+
+{
+  "titulo": "Fahrenheit v2",
+  "autor": "Ray Bradbury",
+  "precio": 19500.00,
+  "publicado": true,
+  "categoria": 1
+}
+
+### Listar Libros
+GET http://127.0.0.1:8000/api/v1/libros/
